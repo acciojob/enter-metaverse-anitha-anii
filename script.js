@@ -1,17 +1,15 @@
-//your JS code here. If required.
-let button = document.getElementById('enterBtn');
-let para = document.getElementById('status');
-let body = document.body;
 
-button.addEventListener('click', function () {
-  let header = document.createElement('h1');
-	header.id ='status';
-  header.innerText = "Entered Metaverse";
+const statusElement = document.getElementById("status");
+const enterButton = document.getElementById("enterBtn");
 
-  if (body.contains(para)) {
-    body.replaceChild(header, para);
-  }
+
+ enterButton.addEventListener("click", function() {
+   const h1Element = document.createElement("h1");
+  h1Element.id ="status";
+    h1Element.textContent = "Entered Metaverse";
+     statusElement.parentNode.replaceChild(h1Element, statusElement);
 });
+
 
 
 
