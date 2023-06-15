@@ -5,10 +5,11 @@ let body = document.body;
 
 button.addEventListener('click', function () {
   let header = document.createElement('h1');
+	header.id='status';
   header.innerText = "Entered Metaverse";
 
   if (body.contains(para)) {
     body.replaceChild(header, para);
   }
-});
+}); 
 
