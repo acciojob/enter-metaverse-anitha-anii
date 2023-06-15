@@ -8,9 +8,9 @@ button.addEventListener('click', function () {
   header.innerText = "Entered Metaverse";
 
   if (body.contains(para)) {
-    para.replaceWith(header);
-    body.appendChild(header);
+    body.replaceChild(header, para);
   }
 });
+
 
 
